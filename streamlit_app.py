@@ -42,7 +42,7 @@ def main():
        "добыча с инфляцией": df['добыча с инфляцией'],
    }
 )
-        st.line_chart(chart_data, color=["#0000FF", "#FF0000"])
+        st.line_chart(chart_data)
 
         st.subheader('График роста зарплат в строительстве с учетом инфляции')
         chart_data = pd.DataFrame(
@@ -51,7 +51,7 @@ def main():
        "строительство с инфляцией": df['строительство с инфляцией'],
    }
 )
-        st.line_chart(chart_data, color=["#0000FF", "#FF0000"])
+        st.line_chart(chart_data)
 
         st.subheader('График роста зарплат в здравоохранении с учетом инфляции')
         chart_data = pd.DataFrame(
@@ -60,7 +60,7 @@ def main():
        "здравоохранение с инфляцией": df['здравоохранение с инфляцией'],
    }
 )
-        st.line_chart(chart_data, color=["#0000FF", "#FF0000"])
+        st.line_chart(chart_data)
 
         st.subheader('Выводы')
 
